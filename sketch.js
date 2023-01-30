@@ -63,7 +63,7 @@ function isPrime(x){
   if(x == 1) {
     return false;
   }
-  for(i = 2; i<x;i++){
+  for(i = 2; i<= sqrt(x) ;i++){
     if(x%i==0){
       return false;
     }
