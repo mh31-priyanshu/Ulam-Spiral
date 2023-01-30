@@ -63,7 +63,9 @@ function isPrime(x){
   if(x == 1) {
     return false;
   }
-  for(i = 2; i<x;i++){
+  // x/2 is used to detect if the number is prime
+  // if the number has no complete divisors till it's half (x/2), then no number after it's half would be a divisor.
+  for(i = 2; i<x/2;i++){
     if(x%i==0){
       return false;
     }
